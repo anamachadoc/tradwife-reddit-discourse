@@ -26,31 +26,26 @@
   .row{display:flex; gap:26px; flex-wrap:wrap; align-items:flex-start}
   .cap{ text-align:center; font-size:11px; color:#9aa1ac; margin-top:8px }
 
-  /* ====== base de barra empilhada ====== */
   .bar{display:flex; overflow:hidden}
   .bar .seg{display:flex; align-items:center; justify-content:center; color:#fff; font-weight:700}
   .bar .seg.neu{color:#5a6168}
 
-  /* ====== V1 — atual (tinta clara + rodapé) ====== */
   .v1{width:204px; border:1.5px solid; border-radius:14px; overflow:hidden; background:#fff; box-shadow:0 2px 10px rgba(28,30,50,.09)}
   .v1.int{background:#f1f8f4; border-color:var(--int)} .v1.ext{background:#fdf6e9; border-color:var(--ext)}
   .v1 .name{padding:12px 13px 13px; font-size:13px; font-weight:650; text-align:center; line-height:1.28}
   .v1 .bar{height:22px} .v1 .bar .seg{font-size:11px}
 
-  /* ====== V2 — branco + faixa colorida no topo ====== */
   .v2{width:204px; background:#fff; border:1px solid #e7e9ee; border-radius:14px; overflow:hidden; box-shadow:0 3px 12px rgba(28,30,50,.10)}
   .v2 .top{height:5px} .v2.int .top{background:var(--int)} .v2.ext .top{background:var(--ext)}
   .v2 .name{padding:13px 13px 12px; font-size:13px; font-weight:650; text-align:center; line-height:1.28}
   .v2 .bar{height:22px} .v2 .bar .seg{font-size:11px}
 
-  /* ====== V3 — listra lateral colorida ====== */
   .v3{width:214px; display:flex; background:#fff; border:1px solid #e7e9ee; border-radius:13px; overflow:hidden; box-shadow:0 3px 12px rgba(28,30,50,.10)}
   .v3 .stripe{width:6px; flex:0 0 6px} .v3.int .stripe{background:var(--int)} .v3.ext .stripe{background:var(--ext)}
   .v3 .body{flex:1; min-width:0}
   .v3 .name{padding:12px 13px 12px; font-size:12.5px; font-weight:650; line-height:1.28}
   .v3 .bar{height:20px} .v3 .bar .seg{font-size:10.5px}
 
-  /* ====== V4 — minimalista (barra slim, ponto de lado) ====== */
   .v4{width:200px; background:#fff; border:1px solid #e8eaef; border-radius:13px; padding:13px 14px 14px; box-shadow:0 2px 8px rgba(28,30,50,.07)}
   .v4 .name{font-size:12.5px; font-weight:650; text-align:center; line-height:1.28; margin-bottom:11px; position:relative}
   .v4 .name .dot{display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:6px; vertical-align:middle}
@@ -59,7 +54,6 @@
   .v4 .slim .seg{border-radius:3px}
   .v4 .nums{display:flex; justify-content:space-between; font-size:9.5px; color:#9aa1ac; margin-top:5px; font-weight:600}
 
-  /* ====== V5 — chip de lado ====== */
   .v5{width:204px; background:#fff; border:1px solid #e7e9ee; border-radius:14px; overflow:hidden; box-shadow:0 3px 12px rgba(28,30,50,.10)}
   .v5 .head{padding:11px 0 4px; text-align:center}
   .v5 .chip{font-size:9.5px; font-weight:800; letter-spacing:.6px; padding:2px 9px; border-radius:999px; color:#fff}
@@ -67,20 +61,17 @@
   .v5 .name{padding:6px 13px 12px; font-size:12.5px; font-weight:650; text-align:center; line-height:1.26}
   .v5 .bar{height:21px} .v5 .bar .seg{font-size:11px}
 
-  /* ====== V6 — elevado / gradiente ====== */
   .v6{width:204px; border-radius:16px; overflow:hidden; box-shadow:0 8px 22px rgba(28,30,50,.16); border:1px solid rgba(255,255,255,.6)}
   .v6.int{background:linear-gradient(160deg,#ffffff, #eaf6ef)} .v6.ext{background:linear-gradient(160deg,#ffffff,#fdf3e3)}
   .v6 .name{padding:14px 14px 13px; font-size:13px; font-weight:680; text-align:center; line-height:1.28}
   .v6 .bar{height:23px; box-shadow:inset 0 1px 0 rgba(0,0,0,.05)} .v6 .bar .seg{font-size:11px}
 
-  /* ====== V7 — donut ao lado do nome ====== */
   .v7{width:230px; display:flex; align-items:center; gap:12px; background:#fff; border:1.5px solid; border-radius:14px; padding:13px 15px; box-shadow:0 3px 12px rgba(28,30,50,.10)}
   .v7.int{border-color:var(--int)} .v7.ext{border-color:var(--ext)}
   .v7 .name{font-size:12.5px; font-weight:650; line-height:1.26; flex:1; min-width:0}
   .v7 .donut{width:52px; height:52px; border-radius:50%; flex:0 0 52px;
     -webkit-mask:radial-gradient(farthest-side,#0000 58%,#000 60%); mask:radial-gradient(farthest-side,#0000 58%,#000 60%)}
 
-  /* ====== V8 — escuro ====== */
   .v8{width:204px; background:#2c2f3c; border:1px solid #3a3e4d; border-radius:14px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,.28)}
   .v8 .top{height:4px} .v8.int .top{background:var(--int)} .v8.ext .top{background:var(--ext)}
   .v8 .name{padding:13px 13px 12px; font-size:13px; font-weight:650; text-align:center; line-height:1.28; color:#eef0f5}
@@ -107,7 +98,7 @@ const S=[
 ];
 
 const n=v=>Math.round(v);
-// barra empilhada com números (largura/altura via classe do design)
+
 function barNums(d){
   const seg=(w,bg,cls='')=>`<span class="seg ${cls}" style="width:${w}%;background:${bg}">${w>=14?n(w):''}</span>`;
   return `<div class="bar">${seg(d.neg,NEG)}${seg(d.neu,NEU,'neu')}${seg(d.pos,POS)}</div>`;
