@@ -1,4 +1,4 @@
-# CBMG PMI interativo
+# Grafo de Transições Temáticas Interativo
 
 Aplicação React para explorar, por cluster, as transições entre macrotemas do
 discurso em `r/tradwives`. O grafo mostra macrotemas internos e externos e as
@@ -47,7 +47,7 @@ O build é produzido em `dist/`.
 - Passar o mouse sobre um nó destaca suas entradas e saídas; clicar fixa o
   destaque; arrastar reposiciona o nó.
 
-Os nós verdes representam macrotemas internos e os âmbar, macrotemas externos.
+Os nós verdes representam macrotemas internos e os amarelos, macrotemas externos.
 
 ## Atualizar os dados do grafo
 
