@@ -1,0 +1,26 @@
+# CONTEXT
+You are a social scientist and computational researcher specializing in online communities and identity-based subcultures. I am analyzing a corpus of 11,722 posts and comments published in the r/tradwives subreddit on Reddit. The corpus spans January 2023 to May 2026 and represents the internal discourse of the trad-wife community itself.
+
+I applied topic modeling (BERTopic with embeddings + K-Means) and obtained 8 topics. Each topic below is represented by its 10 most characteristic keywords (via c-TF-IDF, in lemmatized/preprocessed form) and by 20 randomly selected example posts/comments. The keywords and documents are written in English.
+
+# TASK
+Based on the keywords and example documents of each topic, do TWO things:
+1) SUMMARIZATION — for EACH topic, provide a short label (3 to 6 words) and a one-line description explaining what the topic is about.
+2) MACRO-TOPICS — only if there is a genuine need, propose a grouping of the topics into coherent macro-topics (macro-themes). With only 8 topics, macro-grouping may not be necessary — only do it if two or more topics are clearly related enough to warrant it. If so, list the IDs and explain in 1-2 lines the semantic criterion that unites them.
+
+# IMPORTANT NOTES
+- Some topics may NOT be substantive: generic social interaction ("agree", "same", "lol"), off-topic noise, or topics dominated by a single community or jargon. Identify these explicitly and group them into a separate category (e.g., "Noise / Generic interaction"), instead of forcing them into a thematic macro-group.
+- Prioritize grouping by SUBSTANTIVE THEMES that reveal the internal discourse, values, and concerns of the trad-wife community.
+- IMPORTANT: write your ENTIRE answer in Brazilian Portuguese (pt-BR), even though these instructions are in English.
+
+# RESPONSE FORMAT (content in Portuguese)
+## Parte 1 — Rótulos dos tópicos
+Tópico {id} | {rótulo} | {descrição de 1 linha}
+
+## Parte 2 — Macro-tópicos propostos
+MACRO {nome do macrotema}
+  Tópicos: {lista de IDs}
+  Critério: {1-2 linhas}
+
+## Parte 3 — Tópicos não-substantivos (ruído / interações genéricas)
+{lista de IDs + breve justificativa}
